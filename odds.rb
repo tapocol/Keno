@@ -12,6 +12,6 @@ selections = gets.to_i
 puts " n - Probability - Odds Against to 1"
 (0..selections).each do |i|
   p = probability(selections, i)
-  puts "%2d - %0.8f%% - %17.4f" % [i, p, 1.0 / p]
+  puts "%2d - %0.8f%% - %17.4f" % [i, p, (1.0 / p) - 1.0]
 end
 
